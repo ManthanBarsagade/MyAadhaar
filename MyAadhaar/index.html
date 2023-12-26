@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myAadhaar-Unique Identification Authority of India | Government of India</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logos">
+            <div class="header__logo-container--left">
+                <img src="https://myaadhaar.uidai.gov.in/static/media/uidai_english_logo.37b7e790.svg" alt="UIDAI Logo">
+            </div>
+            <div class="header__logo-container--center">Unique Identification Authority of India</div>
+            <div class="header__logo-container--right">
+                <img src="https://myaadhaar.uidai.gov.in/static/media/aadhaar_english_logo.9a2d6379.svg"
+                    alt="Aadhaar Logo">
+            </div>
+        </div>
+        <div class="header__bar">
+            <div class="header__bar-content-wrapper">
+                <img src="https://myaadhaar.uidai.gov.in/static/media/dashboard.21335c2c.svg" alt="dashboard icon"
+                    class="header__dashboard-logo" style="cursor: pointer;">
+                <div class="header__dashboard-label">
+                    <span class="myAadhaar" style="cursor: pointer;">myAadhaar </span>
+                </div>
+                <div id="main" class="header__language-selector">
+                    <button id="one" onclick="hideShow()">
+                        <img src="https://myaadhaar.uidai.gov.in/static/media/LanguageSelector.dd14b805.svg"
+                            alt="Language Select Icon">
+                        <div class="header__language-selector-current-language-container">
+                            <div class="selected-language">English</div>
+                            <img src="https://myaadhaar.uidai.gov.in/static/media/arrowDownWhite.5705d32d.svg"
+                                alt="Toggle Language select Icon" style="transform: rotate(0deg);">
+                        </div>
+                        <div class="header-languages" style="display: none;">
+                            <div class="option">
+                                <div class="languages">English</div>
+                                <div class="languages">हिंदी</div>
+                                <div class="languages">বাংলা</div>
+                                <div class="languages">ಕನ್ನಡ</div>
+                                <div class="languages">ગુજરાતી</div>
+                                <div class="languages">മലയാളം</div>
+                                <div class="languages">मराठी</div>
+                                <div class="languages">ଓଡ଼ିଆ</div>
+                                <div class="languages">ਪੰਜਾਬੀ</div>
+                                <div class="languages">தமிழ்</div>
+                                <div class="languages">తెలుగు</div>
+                                <div class="languages">اردو</div>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="login-section">
+        <div class="login_div">
+            <img src="https://myaadhaar.uidai.gov.in/static/media/Blue_BackGround_3.025d7a67.jpg" width="100%"
+                height="100%">
+            <div class="login-section_container">
+                <div class="login-section__text">
+                    <p class="login-section-main-heading">Welcome to
+                        <span class="login-section-main-heading-bold">myAadhaar</span>
+                    </p>
+                    <p class="login-section_desc">
+                        Click on
+                        <b class="login-section_desc--bold">Login</b>
+                        button to explore online demographics update service, Aadhaar PVC card ordering & tracking, and
+                        more
+                        value-added services offered by UIDAI. Your mobile number is required to be registered with the
+                        Aadhaar to login.
+                    </p>
+                </div>
+                <div class="login-section__card">
+                    <img src="https://myaadhaar.uidai.gov.in/static/media/fingerPrint.54859169.jpg"
+                        alt="biometrics icon" height="170" width="150">
+                    <div class="login-section__card-btn">
+                        <a class="hyperlink" href=" https://tathya.uidai.gov.in/login" target=" _blank"
+                            rel="noreferrer"> <button type="button" class="button_btn__1dRFj"
+                                style="background-image: linear-gradient(to right, rgb(2, 13, 81), rgb(25, 176, 220)); color: white; font-weight: bold; height: 43px;">Login</button></a>
+                        <p class="login-section__card-desc">Login with Aadhaar and OTP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="login-section__language_selector">
+            <div style="margin-left: 36px; cursor: pointer;">English</div>
+            <div style="margin-left: 36px; cursor: pointer;">हिंदी</div>
+            <div style="margin-left: 36px; cursor: pointer;">বাংলা</div>
+            <div style="margin-left: 36px; cursor: pointer;">ಕನ್ನಡ</div>
+            <div style="margin-left: 36px; cursor: pointer;">ગુજરાતી</div>
+            <div style="margin-left: 36px; cursor: pointer;">മലയാളം</div>
+            <div style="margin-left: 36px; cursor: pointer;">मराठी</div>
+            <div style="margin-left: 36px; cursor: pointer;">ଓଡ଼ିଆ</div>
+            <div style="margin-left: 36px; cursor: pointer;">ਪੰਜਾਬੀ</div>
+            <div style="margin-left: 36px; cursor: pointer;">தமிழ்</div>
+            <div style="margin-left: 36px; cursor: pointer;">తెలుగు</div>
+            <div style="margin-left: 36px; cursor: pointer;">اردو</div>
+        </div>
+    </section>
+    <div class="unauthenticated-page">
+        <section class="ltr">
+            <div class="services__section-separation-description"><b>Services which require mobile number to be
+                    registered with Aadhaar</b>
+                <div><button id="btn" class="popUpTrigger" name="InfoOne">Add Services</button></div>
+            </div>
+
+            <div class="services__services-container one">
+
+            </div>
+
+            <div class="services__section-separation-description"><b> Service which can be availed
+                    even if mobile number is not registered with Aadhaar</b>
+                    
+                <div><button id="btn2" class="popUpTrigger" name="InfoTwo">Add Services</button></div>
+            </div>
+
+            <div class="services__services-container two">
+            </div>
+            <div class="services__section-description">Mobile not Registered with Aadhaar?&nbsp;<a class="hyperlink"
+                    href="https://uidai.gov.in/my-aadhaar/about-your-aadhaar/updating-data-on-aadhaar.html"
+                    target="_blank" rel="noreferrer">Please follow these steps to get it registered.</a>
+            </div>
+            <div class="popup">
+                <h2 style="text-align: center;">Enter Your Data</h2><br>
+                <form id="addDataform" action="">
+                    <label for="Title">Title</label><br>
+                    <input type="text" name="tname" id="Title" /><br><br>
+                    <label for="Description">Description</label><br>
+                    <input type="text" name="dname" id="Description" /><br><br>
+                    <label for="Image">Image</label><br>
+                    <input type="text" name="iname" id="Image" /><br><br>
+                    <input type="hidden" name="varName" id="varName" />
+                    <button id="done" type="submit" onclick="addData(event)">DONE</button>
+                    <button id="cancel" type="button">CANCEL</button>
+                </form>
+                <output id="output"></output>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
